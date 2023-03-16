@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "f4448967-62fe-476e-bfc3-90dbf700ea74",
+		"name": "PinchinchaTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17724078"
+	},
+	"item": [
+		{
+			"name": "/nuevo-usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jose Lema\",\r\n    \"address\": \"Otavalo sn y principal\",\r\n    \"phone\": \"098254785\",\r\n    \"password\": \"4\",\r\n    \"status\": true   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/clientes/nuevo-cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clientes",
+						"nuevo-cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/nueva-cuenta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientName\": \"jOSE lema\",\r\n    \"numberAccount\": \"123429837467\",\r\n    \"type\": \"AHORROS\",\r\n    \"initialBalance\": 400.00\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/nueva-cuenta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"nueva-cuenta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/nuevo-movimientos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numberAccount\": \"123429837467\",\r\n    \"type\": \"AHORROS\",\r\n    \"initialAmount\": 210,\r\n    \"clientName\": \"jOSE lema\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/movimientos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movimientos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
